@@ -62,11 +62,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &trans          &trans          &trans         &trans     &trans   &trans
-&trans         &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                               &trans          &trans          &trans         &trans     &kp N0   &trans
-&trans         &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp DEL  &kp BSPC
-&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(BACKSLASH)  &trans    &trans  &trans          &kp LG(SPACE)   &kp LS(LG(C))  &trans     &trans   &kp C_AL_LOCK
-                             &trans        &trans        &trans        &trans             &trans    &trans  &trans          &trans          &trans         &trans
+&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &trans             &trans          &trans         &trans     &trans   &trans
+&trans         &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                               &trans             &trans          &trans         &trans     &kp N0   &trans
+&trans         &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp DEL  &kp BSPC
+&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(BACKSLASH)  &trans    &trans  &kp LA(LC(ENTER))  &kp LG(SPACE)   &kp LS(LG(C))  &trans     &trans   &kp C_AL_LOCK
+                             &trans        &trans        &trans        &trans             &trans    &trans  &trans             &trans          &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -77,7 +77,7 @@
 &trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                    &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(NUMBER_0))  &trans
 &trans  &kp LC(NUMBER_1)      &kp LC(NUMBER_2)      &kp LC(NUMBER_3)      &kp LC(NUMBER_4)      &kp LC(NUMBER_5)                        &kp LC(NUMBER_6)      &kp LC(NUMBER_7)      &kp LC(NUMBER_8)      &kp LC(NUMBER_9)      &kp LC(NUMBER_0)      &trans
 &trans  &kp LS(LA(H))         &kp LA(LS(J))         &kp LA(LS(K))         &kp LA(LS(L))         &trans                                  &mt LA(LC(H)) LA(H)   &mt LA(LC(J)) LA(J)   &mt LA(LC(K)) LA(K)   &mt LA(LC(L)) LA(L)   &trans                &trans
-&trans  &trans                &trans                &kp LA(LS(S))         &kp LA(LS(G))         &kp LA(S)             &trans    &trans  &kp LA(G)             &kp LG(LA(ENTER))     &kp LA(X)             &trans                &trans                &trans
+&trans  &kp LA(E)             &trans                &kp LA(LS(S))         &kp LA(LS(G))         &mt LA(LS(S)) LA(S)   &trans    &trans  &mt LA(LS(G)) LA(G)   &kp LA(LS(M))         &kp LA(X)             &trans                &trans                &trans
                               &trans                &trans                &trans                &trans                &trans    &trans  &trans                &trans                &trans                &trans
             >;
         };
