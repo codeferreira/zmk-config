@@ -48,7 +48,9 @@
                    &trans     &trans    &trans    &ext_power EP_TOG  &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_PREV K_NEXT>;
         };
 
         raise_layer {
