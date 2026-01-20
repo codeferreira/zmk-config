@@ -2,12 +2,22 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        mouse_combo {
+            bindings = <&lt 4 S>;
+            key-positions = <40 26>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -81,6 +91,16 @@
 &trans  &kp LS(LA(H))         &kp LA(LS(J))         &kp LA(LS(K))         &kp LA(LS(L))         &trans                                  &mt LA(LC(H)) LA(H)   &mt LA(LC(J)) LA(J)   &mt LA(LC(K)) LA(K)   &mt LA(LC(L)) LA(L)   &trans                &trans
 &trans  &kp LA(E)             &trans                &kp LA(LS(B))         &kp LA(LS(T))         &mt LA(LS(S)) LA(S)   &trans    &trans  &mt LA(LS(G)) LA(G)   &kp LA(LS(M))         &kp LA(X)             &trans                &trans                &trans
                               &trans                &trans                &trans                &trans                &trans    &trans  &trans                &trans                &trans                &trans
+            >;
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans
             >;
         };
     };
